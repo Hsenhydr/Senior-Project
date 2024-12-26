@@ -1,0 +1,303 @@
+﻿@page
+@model SeniorProject.Pages.AddServiceModel
+
+@using SeniorProject.Models;
+@{
+}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+<style>
+    /* Global Styles */
+
+
+    main {
+        background-color: #5e84a1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 130vh; */
+    }
+
+    /* Form Container */
+    .seo-form-container {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        height: 120vh;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+        overflow: auto;
+    }
+
+    /* Left Section */
+    .form-left-section {
+        width: 50%;
+        padding: 20px;
+    }
+
+        .form-left-section h2 {
+            font-size: 30px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .form-left-section .form-subtitle {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+    .form-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .form-group {
+        width: 48%;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+        .form-group label {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+            .form-group label i {
+                margin-right: 10px;
+                color: #5e84a1; /* Primary color */
+            }
+
+        /* Input Styling */
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 18px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+            /* Focus Effect */
+            .form-group input:focus,
+            .form-group textarea:focus {
+                border-color: #5e84a1; /* Primary color */
+                box-shadow: 0 0 10px rgba(94, 132, 161, 0.3);
+            }
+
+    /* Submit Button */
+    .submit-button {
+        display: inline-block;
+        margin-top: 10px;
+        color: white;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s;
+        width: 60%;
+        margin: 20px 0px 0px 0px;
+        background-color: #5e84a1;
+        padding: 10px 0px;
+        border-radius: 16px 16px 16px 16px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+        .submit-button:hover {
+            background-color: #4b6f85;
+            transform: translateY(-2px);
+        }
+
+    /* Right Section */
+    .form-right-section {
+        width: 50%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .form-right-section img {
+            max-width: 100%;
+            border-radius: 12px;
+            /* box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); */
+        }
+
+    /* Mobile Responsiveness */
+    @@media (max-width: 768px) {
+        .seo-form-container {
+            flex-direction: column;
+            padding: 15px;
+        }
+
+        .form-left-section,
+        .form-right-section {
+            width: 100%;
+            padding: 10px;
+        }
+
+            .form-left-section h2 {
+                font-size: 24px;
+            }
+
+            .form-left-section .form-subtitle {
+                font-size: 14px;
+            }
+
+        .form-group {
+            width: 100%;
+        }
+
+        .submit-button {
+            font-size: 16px;
+        }
+    }
+</style>
+
+<style>
+    main {
+        background-color: #5e84a1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 130vh;
+    }
+
+    .seo-form-container {
+        height: 90vh;
+    }
+
+
+    .available-courses-link {
+        display: block; /* Makes the link a block element */
+        text-align: center; /* Centers the text */
+        margin-bottom: 20px; /* Adds space below the link */
+        font-size: 18px; /* Adjust font size */
+        color: #5e84a1; /* Primary color */
+        font-weight: bold; /* Makes it bold */
+        margin: 0 auto;
+    }
+</style>
+<main>
+    <div class="seo-form-container">
+        <div class="form-left-section">
+            <h2>Add Service</h2>
+            <p class="form-subtitle">
+            </p>
+            <form method="post" id="addservice">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="servicetitle"><i class="fas fa-cogs"></i> Service Title</label>
+                        <input type="text"
+                               name="servicetitle"
+                               id="servicetitle"
+                               class="input-field"
+                               placeholder="Enter your Service Title" />
+                    </div>
+                    <div class="form-group">
+                        <label for="description"><i class="fas fa-pencil-alt"></i> Service Description</label>
+                        <input type="text"
+                               name="description"
+                               id="description"
+                               class="input-field"
+                               placeholder="Enter Service Description" />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="image"><i class="fas fa-image"></i> Service Image</label>
+                        <input type="text"
+                               name="image"
+                               id="image"
+                               class="input-field"
+                               placeholder="Enter Image" />
+                    </div>
+                    <div class="form-group">
+                        <label for="type"><i class="fas fa-sitemap"></i> Service Type</label>
+                        <select name="type" id="type" class="input-field" style="width: 100%; padding: 14px 18px; font-size: 16px; border-radius: 8px; border: 1px solid #ccc; outline: none; transition: all 0.3s ease;">
+                            <option value="">-- Select a Title --</option>
+                            <option value="plan">Plan</option>
+                            <option value="form">Form</option>
+                            
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="depid"><i class="fas fa-sitemap"></i> Department Name</label>
+                        <select name="depid" id="depid" class="input-field" style="width: 100%; padding: 14px 18px; font-size: 16px; border-radius: 8px; border: 1px solid #ccc; outline: none; transition: all 0.3s ease;">
+                            <option value="">-- Select a Title --</option>
+                            @foreach (Department db in Model.list)
+                            {
+                                <option value="@db.DepartmentId">@db.Title</option>
+                            }
+                        </select>
+                    </div>
+     
+                </div>
+
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+
+        <div class="form-right-section">
+             <img src="~/forms/event.svg" /> 
+            
+        </div>
+    </div>
+</main>
+
+<script>
+    function validateForm(event) {
+        // Prevent the form from submitting
+        event.preventDefault();
+
+        // Collect form data
+        const serviceTitle = document.getElementById("servicetitle").value.trim();
+        const description = document.getElementById("description").value.trim();
+        const eventName = document.getElementById("Eventname").value.trim();
+        const image = document.getElementById("image").value.trim();
+
+        let errors = [];
+
+        // Validate Service Title
+        if (serviceTitle === "") {
+            errors.push("<li>Service Title is required.</li>");
+        }
+
+        // Validate Service Description
+        if (description === "") {
+            errors.push("<li>Service Description is required.</li>");
+        }
+
+        // Validate Event Name
+        if (eventName === "") {
+            errors.push("<li>Event Name is required.</li>");
+        }
+
+        // Validate Image
+        if (image === "") {
+            errors.push("<li>Service Image is required.</li>");
+        }
+
+        // If there are errors, display them using SweetAlert2
+        if (errors.length > 0) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Form Validation Failed',
+                html: `<ul>${errors.join('')}</ul>`,
+                confirmButtonText: 'OK'
+            });
+        } else {
+            // If no errors, submit the form
+            document.getElementById("addservice").submit();
+        }
+    }
+</script>

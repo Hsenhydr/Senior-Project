@@ -1,0 +1,396 @@
+﻿@page
+@model SeniorProject.Pages.plansModel
+@using SeniorProject.Models;
+
+<head>
+    <style>
+
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%; /* Position from the top of the screen */
+            left: 50%; /* Position from the left of the screen */
+            transform: translate(-50%, -50%); /* Center the modal */
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%; /* Adjust as needed */
+            max-width: 600px; /* Maximum width for the modal */
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #aaa;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+        }
+
+            .close-btn:hover,
+            .close-btn:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+
+        body {
+        font-family: "Quicksand" !important;
+        margin: 0;
+        padding: 0;
+        background: #5e84a1;
+        }
+
+        .plans-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        flex-wrap: wrap;
+        height: 1000px;
+        perspective: 1500px;
+        }
+
+        .plan {
+        width: 300px;
+        padding: 20px;
+        text-align: center;
+        background-color: #f5f5f5;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        transition: transform 0.5s ease, z-index 0.3s;
+        }
+
+        .plan img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        }
+
+        .plan:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+
+        .back {
+        transform: translateZ(-200px);
+        z-index: 1;
+        }
+
+        .plan-title {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+        }
+
+        .plan-price {
+        font-size: 20px;
+        color: #5e84a1;
+        margin-bottom: 15px;
+        }
+
+        .plan-description {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 15px;
+        }
+
+        .plan-details {
+        font-size: 14px;
+        color: #444;
+        }
+
+        .plan-details span {
+        display: block;
+        margin-bottom: 8px;
+        }
+
+        .plan-button {
+        display: inline-block;
+        margin-top: 10px;
+        color: white;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s;
+        width: 90%;
+        margin: 20px 0px 0px 0px;
+        background-color: #5e84a1;
+        padding: 10px 0px;
+        border-radius: 16px 16px 16px 16px;
+        font-weight: bold;
+        text-decoration:none;
+        }
+        .plan-button:hover { 
+        background: #0056b3;
+        color: white;
+        } 
+
+        .mainone {
+        z-index: 50;
+        }
+        /* Modal Styles */
+        .modal {
+        display: none; /* Hidden by default */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        }
+
+        .modal-content {
+        background: linear-gradient(145deg, #ffffff, #f3f3f3);
+        padding: 20px;
+        border-radius: 15px;
+        width: 400px;
+        height: 400px;
+        text-align: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        .modal-content h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+        font-weight: bold;
+        }
+
+        .modal-content p {
+        font-size: 16px;
+        color: #666;
+        margin: 10px 0;
+        line-height: 1.5;
+        }
+
+        .modal-content .price {
+        font-size: 20px;
+        color: #5e84a1;
+        margin: 15px 0;
+        font-weight: bold;
+        }
+
+        .modal-content .subscribe-btn {
+        margin-top: 20px;
+        background-color: #5e84a1;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s ease, transform 0.2s;
+        }
+
+        .modal-content .subscribe-btn:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+        }
+
+        .close-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        font-weight: bold;
+        color: #999;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        }
+
+        .close-btn:hover {
+        color: #333;
+        }
+
+    </style>
+</head>
+@{
+    string email = HttpContext.Session.GetString("email");
+    bool subscribed = new DAL().isSubscribed(email);
+}
+<body>
+    <h1 style="text-align: center;
+    color: white;
+    padding-top: 35px;
+    padding-bottom: 20px;">
+        @Model.ServiceTitle Plans
+    </h1>
+    <div class="plans-container" id="plans-container">
+        @for (int i = 0; i < Model.planlist.Count; i++)
+        {
+            var plan = Model.planlist[i];
+            string planClass = i == 1 ? "plan mainone" : "plan back"; 
+
+            <div class="@planClass">
+                <img src="~/plans/@(plan.Image).svg" />
+                <div class="plan-title">@plan.Title</div>
+                <div class="plan-price">$@plan.PlanPrice</div>
+                <div class="plan-description">@plan.PlanDescription</div>
+                <div class="plan-details">
+                    @if (!string.IsNullOrEmpty(plan.VideoLength))
+                    {
+                        <span><strong>Length:</strong> @plan.VideoLength</span>
+                    }
+                    @if (plan.Revisions > 0)
+                    {
+                        <span><strong>Revisions:</strong> @plan.Revisions revision</span>
+                    }
+                    @if (!string.IsNullOrEmpty(plan.VoiceOver))
+                    {
+                        <span><strong>Voice Over:</strong> @plan.VoiceOver</span>
+                    }
+                    @if (!string.IsNullOrEmpty(plan.Location))
+                    {
+                        <span><strong>Location:</strong> @plan.Location</span>
+                    }
+                    @if (!string.IsNullOrEmpty(plan.Duration))
+                    {
+                        <span><strong>Duration:</strong> @plan.Duration</span>
+                    }
+                    @if (!string.IsNullOrEmpty(plan.DesignType))
+                    {
+                        <span><strong>Design Type:</strong> @plan.DesignType</span>
+                    }
+                    @if (plan.NumberOfDesigns > 0)
+                    {
+                        <span><strong>Number of Design/Shots:</strong> @plan.NumberOfDesigns</span>
+                    }
+                    @if (!string.IsNullOrEmpty(plan.PlatformManaged))
+                    {
+                        <span><strong>Platform Managed:</strong> @plan.PlatformManaged</span>
+                    }
+                    @if (plan.PostsPerMonth > 0)
+                    {
+                        <span><strong>Posts Per Month:</strong> @plan.PostsPerMonth</span>
+                    }
+                    @if (!string.IsNullOrEmpty(plan.ReportingFrequency))
+                    {
+                        <span><strong>Reporting Frequency:</strong> @plan.ReportingFrequency</span>
+                    }
+                    @if (!string.IsNullOrEmpty(plan.MotionGraphicType))
+                    {
+                        <span><strong>Motion Graphic Type:</strong> @plan.MotionGraphicType</span>
+                    }
+                </div>
+
+                @if (subscribed)
+                {
+                    <button class="plan-button" disabled>You Are Already Subscribed</button>
+                }
+                else
+                {
+                    <button class="plan-button" onclick="openModal('@plan.Title', '@plan.PlanPrice', '@plan.PlanDescription', '@plan.PlanID')">Subscribe To the plan</button>
+                }
+                
+            </div>
+        }
+    </div>
+    <div class="modal" id="planModal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <h2 id="modalTitle">Plan Title</h2>
+            <p class="price" id="modalPrice">$50</p>
+            <p id="modalDescription">
+                This is a detailed description of the selected plan. It contains all the features and benefits.
+            </p>
+                <form method="post" onsubmit="return validateSessionBeforeSubmit();">
+                    <!-- Hidden fields to store selected plan data -->
+                <input type="hidden" name="planId" id="hiddenPlanId" />
+                    <input type="hidden" name="planTitle" id="hiddenPlanTitle" />
+                    <input type="hidden" name="planPrice" id="hiddenPlanPrice" />
+                    <input type="hidden" name="planDescription" id="hiddenPlanDescription" />
+
+                <button type="submit" class="plan-button w-100 p-2">Subscribe Now</button> 
+            </form> 
+        </div>
+    </div>
+ 
+    <script>
+            
+        const emailSession = "@HttpContext.Session.GetString("email")";
+
+        function validateSessionBeforeSubmit() {
+                   if (!emailSession || emailSession.trim() === "") {
+            Swal.fire({
+                icon: 'warning',
+                title: 'Login Required',
+                text: 'You need to log in first to subscribe to a plan.',
+                confirmButtonText: 'Okay'
+            }).then(() => {
+                window.location.href = '/login'; 
+            });
+
+            return false; 
+        }
+
+            Swal.fire({
+                icon: 'success',
+                title: 'Subscribed Successfully',
+                text: 'You have successfully subscribed to the plan.',
+                confirmButtonText: 'Okay'
+            }).then(() => {
+                document.querySelector('form[method="post"]').submit(); 
+            });
+
+            return false; 
+        }
+
+                function openModal(title, price, description,PlanID) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalPrice').innerText = "$" + price;
+            document.getElementById('modalDescription').innerText = description;
+
+            // Set the hidden input values based on the passed parameters
+            document.getElementById('hiddenPlanId').value = PlanID;
+            document.getElementById('hiddenPlanTitle').value = title;
+            document.getElementById('hiddenPlanPrice').value = price;
+            document.getElementById('hiddenPlanDescription').value = description;
+
+            document.getElementById('planModal').style.display = 'block';
+        }
+
+
+        function closeModal() {
+            document.getElementById('planModal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            var modal = document.getElementById('planModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+    </script>
+
+
+
+</body>

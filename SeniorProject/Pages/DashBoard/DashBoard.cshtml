@@ -1,0 +1,1038 @@
+﻿@page
+@model SeniorProject.Pages.DashBoard.DashBoardModel
+@using SeniorProject.Models;
+@{
+    Layout = null;
+    int count = new DAL().usersCount();
+    int money = new DAL().totalmoney();
+    int total = new DAL().totaltransaction();
+    string GetStatusClass(string status)
+    {
+        switch (status)
+        {
+            case "Pending":
+                return "text-warning"; // Yellow color for Pending
+            case "Ongoing":
+                return "text-info";    // Blue color for Ongoing
+            case "Completed":
+                return "text-success"; // Green color for Completed
+            default:
+                return "text-muted";   // Gray color for unknown status
+        }
+    }
+
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous" />
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        @@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+        body {
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+        font-family: "Quicksand" !important;
+        }
+
+        .sidebar {
+        width: 250px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: width 0.3s ease;
+        z-index: 1000;
+        background-color: #5e84a1;
+        }
+
+        .sidebar-header {
+        background-color: #5e84a1;
+        text-align: center;
+        padding: 20px;
+        }
+
+        .page-content {
+        margin-left: 250px;
+        width: calc(100% - 250px);
+        height: 100%;
+        overflow-y: auto;
+        transition: margin-left 0.3s ease, width 0.3s ease;
+        }
+
+        .page-content.collapsed {
+        margin-left: 80px; /* Adjust content when sidebar is collapsed */
+        width: calc(100% - 80px);
+        }
+
+        .sidebar.collapsed {
+        width: 80px; /* Reduced width of sidebar */
+        }
+
+        .sidebar.collapsed .sidebar-title {
+        display: none; /* Hide the sidebar title */
+        }
+
+        .sidebar.collapsed .nav-link {
+        justify-content: center; /* Center the icons */
+        font-size: 20px;
+        }
+
+        .sidebar.collapsed .nav-link .link-text {
+        display: none; /* Hide the text */
+        }
+
+        .sidebar .nav-link {
+        display: flex;
+        align-items: center;
+        padding: 12px 20px;
+        color: #fff;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        }
+
+        .sidebar .nav-link:hover {
+        background-color: #007bff;
+        }
+
+        .sidebar .nav-item.active .nav-link {
+        background-color: #007bff;
+        }
+
+        .sidebar .nav-item.mt-auto .nav-link {
+        margin-top: auto;
+        }
+
+        #menu-toggle {
+        cursor: pointer;
+        }
+
+        .card {
+        border-radius: 10px;
+        transition: all 0.3s;
+        }
+
+        .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar {
+        z-index: 1;
+        }
+
+        .navbar .navbar-nav .nav-item {
+        margin-left: 10px;
+        }
+
+        .navbar .dropdown-menu {
+        right: 0;
+        }
+
+        .page-content.collapsed {
+        margin-left: 80px;
+        width: calc(100% - 80px); /* Adjust width when sidebar is collapsed */
+        }
+
+        /* Additional styles for content */
+        .container-fluid {
+        padding: 20px;
+        }
+
+        .addform {
+        margin-top: 50px !important;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 80%;
+        margin: 0 auto;
+        }
+
+        .addform .form-floating {
+        flex: 1 1 calc(50% - 10px);
+        }
+
+        .addform button {
+        border: 1px solid #f5f5f5;
+        border-radius: 50px;
+        color: white;
+        padding: 10px 20px 10px 20px;
+        margin: 0 auto;
+        margin-top: 20px;
+        }
+
+        .addform button:hover {
+        color: #5e84a1;
+        transform: scale(1.1);
+        transition: 0.6s;
+        border: 1px solid #5e84a1;
+        }
+
+        /* Table styles */
+        table.servicetb {
+        border: 1px solid #1c6ea4;
+        background-color: #eeeeee;
+        width: 80%;
+        text-align: center;
+        border-collapse: collapse;
+        margin: 0 auto;
+        }
+
+        table.servicetb td,
+        table.servicetb th {
+        padding: 3px 2px;
+        }
+
+        table.servicetb tbody td {
+        font-size: 20px;
+        font-weight: 200;
+        padding: 10px;
+        }
+
+        table.servicetb td:nth-child(even) {
+        background: #5e84a1;
+        color: white;
+        }
+
+        table.servicetb th:nth-child(even) {
+        background: #5e84a1;
+        color: white;
+        }
+
+        /* Admin and User content styles */
+        .admincontainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        }
+
+        .admin {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        background-color: #5e84a1;
+        padding: 30px 70px 30px 10px;
+        border-radius: 10px;
+        box-shadow: 2px 7px 13px 0px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+        position: relative;
+        }
+
+        .adminimg img {
+        width: 100px;
+        border-radius: 10px;
+        box-shadow: 2px 7px 13px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .admininfo p,
+        .admininfo span {
+        font-size: 11px;
+        color: white;
+        }
+
+        .action {
+        position: absolute;
+        right: 6px;
+        bottom: 2px;
+        display: flex;
+        gap: 10px;
+        }
+
+        .action a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        }
+
+        /* Hide the sidebar content when collapsed */
+        header {
+        display: flex;
+        margin-left: 17px;
+        margin-right: 50px;
+        margin-top: 12px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        }
+
+        .back a {
+        text-decoration: none;
+        color: white;
+        }
+
+        table.user {
+        border: 1px solid #1c6ea4;
+        background-color: #eeeeee;
+        width: 90%;
+        text-align: center;
+        border-collapse: collapse;
+        margin: 0 auto;
+        }
+
+        table.user td,
+        table.user th {
+        padding: 3px 30px;
+        }
+
+        table.user tbody td {
+        font-size: 18px;
+        font-weight: 200;
+        padding: 10px;
+        }
+
+        table.user td:nth-child(even) {
+        background: #5e84a1;
+        color: white;
+        }
+
+        table.user th:nth-child(even) {
+        background: #5e84a1;
+        color: white;
+        }
+
+        table.user tfoot td {
+        font-size: 14px;
+        }
+
+        table.user tfoot .links {
+        text-align: right;
+        }
+
+        table.user tfoot .links a {
+        display: inline-block;
+        background: #1c6ea4;
+        color: #ffffff;
+        padding: 2px 8px;
+        border-radius: 5px;
+        }
+
+        td a {
+        text-decoration: none;
+        color: black;
+        padding: 10px 20px 10px 20px;
+        }
+
+        .add {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 20px 10px 20px;
+        }
+
+        .add a {
+        text-decoration: none;
+        color: #5e84a1;
+        font-size: 20px;
+        padding: 10px 20px 10px 20px;
+        border-radius: 50px;
+        border: 1px solid #5e84a1;
+        }
+
+        .add a:hover {
+        color: #5e84a1;
+        transform: scale(1.1);
+        transition: 0.6s;
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <nav class="sidebar text-white">
+            <div class="sidebar-header text-center py-3 border-bottom">
+                <h3 class="fs-4 sidebar-title">Media Horizon</h3>
+                <p class="small text-muted sidebar-title">Admin Panel</p>
+            </div>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="dashboard-link">
+                        <i class="fa fa-tachometer-alt me-2"></i>
+                        <span class="link-text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="admins-link">
+                        <i class="fa fa-user-shield me-2"></i>
+                        <span class="link-text">Admins</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="users-link">
+                        <i class="fa fa-users me-2"></i>
+                        <span class="link-text">Users</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="services-link">
+                        <i class="fa fa-cogs me-2"></i>
+                        <span class="link-text">Services</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="plans-link">
+                        <i class="fa fa-briefcase me-2"></i>
+                        <span class="link-text">Departments</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="events-link">
+                        <i class="fa fa-calendar-alt me-2"></i>
+                        <span class="link-text">Events</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="courses-link">
+                        <i class="fa fa-book me-2"></i>
+                        <span class="link-text">Courses</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="transactions-link">
+                        <i class="fa fa-credit-card me-2"></i>
+                        <span class="link-text">Transactions</span>
+                    </a>
+                </li>
+                <li class="nav-item mt-auto">
+                    <a href="#" class="nav-link" style="color: darkred" id="logout-link">
+                        <i class="fa fa-sign-out-alt me-2"></i>
+                        <span class="link-text">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Page Content -->
+        <div class="page-content">
+            <!-- Topbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <button class="btn me-auto" id="menu-toggle"></button>
+                </div>
+            </nav>
+            <!-- Content Section -->
+            <div class="container-fluid py-4" id="content">
+                <!-- Default content (Dashboard) -->
+                <h1 class="mb-4"></h1>
+                <div class="row g-4" id="dashboard-content">
+                    <div class="col-md-4">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body text-center">
+                                <i class="fa fa-users fa-2x text-primary mb-3"></i>
+                                <h5 class="card-title">Total Users</h5>
+                                <p class="card-text fs-4">@count</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body text-center">
+                                <i class="fa fa-dollar-sign fa-2x text-success mb-3"></i>
+                                <h5 class="card-title">Revenue</h5>
+                                <p class="card-text fs-4">@money</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body text-center">
+                                <i class="fa fa-shopping-cart fa-2x text-warning mb-3"></i>
+                                <h5 class="card-title">Transaction</h5>
+                                <p class="card-text fs-4">@total</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Admins Content (initially hidden) -->
+            <main id="admins-content"
+            style="display: none"
+            class="containerfluid py-4">
+                <header class="header">
+                    <div class="back">
+                        <a href="dashBoard.html">
+                            <i class="bi bi-house-door" style="font-size: 30px"></i>
+                        </a>
+                    </div>
+                    <div class="search">
+                        <form class="d-flex" role="search" onChange="search()">
+                            <input class="form-control me-2"
+                            type="search"
+                            placeholder="Search for admin"
+                            id="searchfield" />
+                        </form>
+                    </div>
+                </header>
+                <div class="admincontainer">
+                    @{
+                        foreach (Person ser in Model.Adminlist)
+                        {
+                            <div class="admin"
+                            data-first-name="@ser.fName"
+                            data-last-name="@ser.lName">
+                                <div class="adminimg ps-5">
+                                    <i class="fa fa-user" style="font-size:35px"></i>
+
+                                </div>
+                                <div class="admininfo">
+                                    <p>First Name: <span>@ser.fName</span></p>
+                                    <p>Last Name: <span>@ser.lName</span></p>
+                                </div>
+                                <div class="admininfo">
+                                    <p>National ID: <span>@ser.NationalId</span></p>
+                                    <p>
+                                        Phone Number: <span>+@ser.areacode @ser.phonenumber</span>
+                                    </p>
+                                    <p>Email: <span>@ser.account</span></p>
+                                </div>
+                                <div class="action">
+                                    <a href="/DeleteAdmin?id=@ser.NationalId">
+                                        <i class="bi bi-trash"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        }
+                    }
+                </div>
+            </main>
+            <!-- Users Content (initially hidden) -->
+            <main id="users-content"
+            style="display: none"
+            class="containerfluid py-4">
+                <header class="header">
+                    <div class="back">
+                        <a href="dashBoard.html">
+                            <i class="bi bi-house-door" style="font-size: 30px"></i>
+                        </a>
+                        <!-- <i class="bi bi-arrow-left-short" style="font-size: 30px;"></i> -->
+                    </div>
+                    <div class="search">
+                        <form class="d-flex" role="search" onChange="search()">
+                            <input class="form-control me-2"
+                            type="search"
+                            placeholder="Search for User"
+                            id="searchfield" />
+                        </form>
+                    </div>
+                </header>
+                @{
+                    bool hasUsers = Model.userlist != null && Model.userlist.Any();
+                }
+                @if (hasUsers)
+                {
+                    <table class="user">
+                        <tbody>
+                            <tr>
+                                <th>National ID</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Phone Number</th>
+                                <th>Email</th>
+                                <th>Password</th>
+                                <th>Action</th>
+                            </tr>
+                            @foreach (Person user in Model.userlist)
+                            {
+                                <tr class="searchrow">
+                                    <td class="">@user.NationalId</td>
+                                    <td class="">@user.fName</td>
+                                    <td class="">@user.lName</td>
+                                    <!-- Assuming 'lName' is the last name -->
+                                    <td>+@user.areacode @user.phonenumber</td>
+                                    <td>@user.account</td>
+                                    <td>@user.password</td>
+                                    <td>
+                                        <a href="/DeleteUser?id=@user.NationalId"
+                                        style="color: #5e84a1">
+                                            <i class="bi bi-trash"></i>
+                                        </a>
+                                        <a href="/Switch?email=@user.account" style="color: #5e84a1">
+                                            <i class="bi bi-arrow-left-right"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+                else
+                {
+                    <p class="display-1 text-center">No users found.</p>
+                    <!-- Optional: Show a message when no users exist -->
+                }
+            </main>
+            <!-- Services Content (initially hidden) -->
+            <div class="container-fluid py-4"
+            id="services-content"
+            style="display: none">
+                <h1>Services</h1>
+                <a href="/AddService"
+                style="color: #5e84a1; font-size: 20px"
+                class="text-center">
+                    <i class="bi bi-plus text-center"
+                    style="font-size: 50px; margin: 0 auto"></i>
+                </a>
+                <table class="user">
+                    <tbody>
+                        <tr>
+                            <th>Service ID</th>
+                            <th>Service Title</th>
+                            <th>Service Description</th>
+                            <th>Managed by Department</th>
+                            <th>Action</th>
+                        </tr>
+                        @foreach (Service service in Model.servicelist)
+                        {
+                            <tr class="searchrow">
+                                <td class="">@service.Id</td>
+                                <td class="">@service.Title</td>
+                                <td class="">@service.Description</td>
+                                <td>@service.DepartmentTitle</td>
+                                <td>
+                                    <a href="/DeleteService?id=@service.Id"
+                                    style="color: #5e84a1">
+                                        <i class="bi bi-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <!-- Departments Content (initially hidden) -->
+            <div class="container-fluid py-4"
+            id="plans-content"
+            style="display: none">
+                <h1>Departments</h1>
+                <a href="/AddDep"
+                style="color: #5e84a1; font-size: 20px"
+                class="text-center">
+                    <i class="bi bi-plus text-center"
+                    style="font-size: 50px; margin: 0 auto"></i>
+                </a>
+                <table class="user">
+                    <tbody>
+                        <tr>
+                            <th>Department ID</th>
+                            <th>Department Title</th>
+                            <th>Department Description</th>
+                            <th>Action</th>
+                        </tr>
+                        @foreach (Department service in Model.list)
+                        {
+                            <tr class="searchrow">
+                                <td class="">@service.DepartmentId</td>
+                                <td class="">@service.Title</td>
+                                <td class="">@service.Description</td>
+                                <td>
+                                    <a href="/EditDep?id=@service.DepartmentId"
+                                    style="color: white">
+                                        <i class="bi bi-pencil"></i>
+                                    </a>
+                                    <a href="/DeleteDep?id=@service.DepartmentId"
+                                    style="color: white">
+                                        <i class="bi bi-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <!-- Events -->
+            <div class="container-fluid py-4"
+            id="events-content"
+            style="display: none">
+                <h1>Events</h1>
+                <a href="/AddEvent"
+                style="color: #5e84a1; font-size: 20px"
+                class="text-center">
+                    <i class="bi bi-plus text-center"
+                    style="font-size: 50px; margin: 0 auto"></i>
+                </a>
+                <table class="user">
+                    <tbody>
+                        <tr>
+                            <th>Event ID</th>
+                            <th>Event Title</th>
+                            <th>Event Description</th>
+                            <th>Event Type</th>
+                            <th>Start Time</th>
+                            <th>End Time</th>
+                            <th>Date</th>
+                            <th>Capacity</th>
+                            <th>Price</th>
+                            <th>Location</th>
+                            <th>Instructor</th>
+                            <th>Action</th>
+                        </tr>
+                        @foreach (Events ev in Model.events )
+                        {
+                            <tr class="searchrow">
+                                <td class="">@ev.Id</td>
+                                <td class="">@ev.Title</td>
+                                <td class="">@ev.Description</td>
+                                <td class="">@ev.Type</td>
+                                <td class="">@TimeOnly.FromDateTime(@ev.StartTime)</td>
+                                <td class="">@TimeOnly.FromDateTime(@ev.EndTime)</td>
+                                <td class="">@DateOnly.FromDateTime(@ev.Date)</td>
+                                <td class="">@ev.Capacity</td>
+                                <td class="">@ev.Price</td>
+                                <td class="">@ev.Location</td>
+                                <td class="">@ev.Instructor</td>
+                                <td>
+                                    <a href="/EditEvent?id=@ev.Id"
+                                    style="color: white">
+                                        <i class="bi bi-pencil"></i>
+                                    </a>
+                                    <br />
+                                    <a href="/DeleteEvent?id=@ev.Id"
+                                    style="color: white">
+                                        <i class="bi bi-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <!-- Courses -->
+            <div class="container-fluid py-4"
+            id="courses-content"
+            style="display: none">
+                <h1>Courses</h1>
+                <a href="/AddCourse"
+                style="color: #5e84a1; font-size: 20px"
+                class="text-center">
+                    <i class="bi bi-plus text-center"
+                    style="font-size: 50px; margin: 0 auto"></i>
+                </a>
+                <table class="user">
+                    <tbody>
+                        <tr>
+                            <th>Course ID</th>
+                            <th>Course Title</th>
+                            <th>Course Description</th>
+                            <th>Instructor</th>
+                            <th>Price</th>
+                            <th>Duration</th>
+                            <th>Location</th>
+                            <th>Start Date</th>
+                            <th>Action</th>
+                        </tr>
+                        @foreach (Courses cr in Model.courses)
+                        {
+                            <tr class="searchrow">
+                                <td class="">@cr.Id</td>
+                                <td class="">@cr.Title</td>
+                                <td class="">@cr.Description</td>
+                                <td class="">@cr.Instructor</td>
+                                <td class="">@cr.Price</td>
+                                <td class="">@cr.Duration</td>
+                                <td class="">@cr.Location</td>
+                                <td class="">@cr.StartDate</td>
+                                <td>
+                                    <a href="/EditCourse?id=@cr.Id" style="color: #5e84a1">
+                                        <i class="bi bi-pencil"></i>
+                                    </a>
+                                    <a href="/DeleteCourse?id=@cr.Id"
+                                    style="color: #5e84a1">
+                                        <i class="bi bi-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <!--Transactions-->
+            <div class="container-fluid py-4"
+            id="transactions-content"
+            style="display: none">
+                <h1 class="text-warning">Pending Transactions</h1>
+                @if (Model.tran.Any())
+                {
+                    <table class="user">
+                        <tbody>
+                            <tr>
+                                <th>Transaction ID</th>
+                                <th>National ID</th>
+                                <th>Service ID</th>
+                                <th>Plan ID</th>
+                                <th>Form Type</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                            @foreach (Transactions tr in Model.tran)
+                            {
+                                <tr class="searchrow">
+                                    <td class="">@tr.TransactionID</td>
+                                    <td class="">@tr.NationalID</td>
+                                    <td class="">@tr.ServiceID</td>
+                                    <td class="">
+                                     
+                                        @if (tr.PlanID.HasValue )
+                                        {
+                                            @tr.PlanID
+                                        }
+                                        else {
+                                            <text>It is a Form</text>
+                                        }
+                                    </td>
+                                    <td class="">
+
+                                        @if (tr.FormType != null)
+                                        {
+                                            @tr.FormType
+                                        }
+                                        else
+                                        {
+                                            <text>It is a Plan</text>
+                                        }
+                                    </td>
+                                    <td class="">@tr.TransactionDate</td>
+                                    <td class="">$@tr.TransactionAmount</td>
+                                    <td class="@GetStatusClass(tr.TransactionStatus) fw-bolder">@tr.TransactionStatus</td>
+                                    <td>
+                                        <a href="/Ongoing?id=@tr.TransactionID" style="color: #5e84a1">
+                                            <i class="fa fa-sync"></i>
+                                        </a>
+                                        <a href="/Completed?id=@tr.TransactionID" style="color: #5e84a1">
+                                            <i class="fa fa-check"></i>
+                                        </a>
+                                        <a href="/DeleteTran?id=@tr.TransactionID" style="color: #5e84a1">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+                else
+                {
+                    <p class="text-center display-4">No pending transactions available.</p>
+                }
+
+                <h1 class="text-info">Ongoing Transactions</h1>
+                @if (Model.ongoing.Any())
+                {
+                    <table class="user">
+                        <tbody>
+                            <tr>
+                                <th>Transaction ID</th>
+                                <th>National ID</th>
+                                <th>Service ID</th>
+                                <th>Plan ID</th>
+                                <th>Form Type</th>
+
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                            @foreach (Transactions tr in Model.ongoing)
+                            {
+                                <tr class="searchrow">
+                                    <td class="">@tr.TransactionID</td>
+                                    <td class="">@tr.NationalID</td>
+                                    <td class="">@tr.ServiceID</td>
+                                    <td class="">
+
+                                        @if (tr.PlanID.HasValue)
+                                        {
+                                            @tr.PlanID
+                                        }
+                                        else
+                                        {
+                                            <text>It is a Form</text>
+                                        }
+                                    </td>
+                                    <td class="">
+
+                                        @if (tr.FormType != null)
+                                        {
+                                            @tr.FormType
+                                        }
+                                        else
+                                        {
+                                            <text>It is a Plan</text>
+                                        }
+                                    </td>
+                                    <td class="">@tr.TransactionDate</td>
+                                    <td class="">$@tr.TransactionAmount</td>
+                                    <td class="@GetStatusClass(tr.TransactionStatus) fw-bolder">@tr.TransactionStatus</td>
+                                    <td>
+                                        <a href="/Completed?id=@tr.TransactionID" style="color: #5e84a1">
+                                            <i class="fa fa-check"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+                else
+                {
+                    <p class="text-center display-4">No ongoing transactions available.</p>
+                }
+
+                <h1 class="text-success">Completed Transactions</h1>
+                @if (Model.completed.Any())
+                {
+                    <table class="user">
+                        <tbody>
+                            <tr>
+                                <th>Transaction ID</th>
+                                <th>National ID</th>
+                                <th>Service ID</th>
+                                <th>Plan ID</th>
+                                <th>Form Type</th>
+
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                            @foreach (Transactions tr in Model.completed)
+                            {
+                                <tr class="searchrow">
+                                    <td class="">@tr.TransactionID</td>
+                                    <td class="">@tr.NationalID</td>
+                                    <td class="">@tr.ServiceID</td>
+                                    <td class="">
+
+                                        @if (tr.PlanID.HasValue)
+                                        {
+                                            @tr.PlanID
+                                        }
+                                        else
+                                        {
+                                            <text>It is a Form</text>
+                                        }
+                                    </td>
+                                    <td class="">
+
+                                        @if (tr.FormType != null)
+                                        {
+                                            @tr.FormType
+                                        }
+                                        else
+                                        {
+                                            <text>It is a Plan</text>
+                                        }
+                                    </td>
+                                    <td class="">@tr.TransactionDate</td>
+                                    <td class="">$@tr.TransactionAmount</td>
+                                    <td class="@GetStatusClass(tr.TransactionStatus) fw-bolder">@tr.TransactionStatus</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+                else
+                {
+                    <p class="text-center display-4">No completed transactions available.</p>
+                }
+
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const sidebar = document.querySelector(".sidebar");
+        const pageContent = document.querySelector(".page-content");
+        const dashboardLink = document.getElementById("dashboard-link");
+        const adminsLink = document.getElementById("admins-link");
+        const usersLink = document.getElementById("users-link");
+        const servicesLink = document.getElementById("services-link");
+        const plansLink = document.getElementById("plans-link");
+        const eventsLink = document.getElementById("events-link");
+        const coursesLink = document.getElementById("courses-link");
+        const transactionsLink = document.getElementById("transactions-link");
+        const logoutLink = document.getElementById("logout-link");
+        const dashboardContent = document.getElementById("dashboard-content");
+        const adminsContent = document.getElementById("admins-content");
+        const usersContent = document.getElementById("users-content");
+        const servicesContent = document.getElementById("services-content");
+        const plansContent = document.getElementById("plans-content");
+        const eventsContent = document.getElementById("events-content");
+        const coursesContent = document.getElementById("courses-content");
+        const transactionsContent = document.getElementById("transactions-content");
+        menuToggle.addEventListener("click", () => {
+          sidebar.classList.toggle("collapsed");
+          pageContent.classList.toggle("expanded");
+        });
+        dashboardLink.addEventListener("click", () => {
+          resetContent();
+          dashboardContent.style.display = "flex";
+        });
+        adminsLink.addEventListener("click", () => {
+          resetContent();
+          adminsContent.style.display = "block";
+        });
+        usersLink.addEventListener("click", () => {
+          resetContent();
+          usersContent.style.display = "block";
+        });
+        servicesLink.addEventListener("click", () => {
+          resetContent();
+          servicesContent.style.display = "block";
+        });
+        plansLink.addEventListener("click", () => {
+          resetContent();
+          plansContent.style.display = "block";
+        });
+        eventsLink.addEventListener("click", () => {
+          resetContent();
+          eventsContent.style.display = "block";
+        });
+        coursesLink.addEventListener("click", () => {
+          resetContent();
+          coursesContent.style.display = "block";
+        });
+        transactionsLink.addEventListener("click", () => {
+          resetContent();
+          transactionsContent.style.display = "block";
+        });
+        logoutLink.addEventListener("click", () => {
+          window.location.href = '/Logout';
+        });
+        function resetContent() {
+          dashboardContent.style.display = "none";
+          adminsContent.style.display = "none";
+          usersContent.style.display = "none";
+          servicesContent.style.display = "none";
+          plansContent.style.display = "none";
+          eventsContent.style.display = "none";
+          coursesContent.style.display = "none";
+          transactionsContent.style.display = "none";
+        }
+    </script>
+</body>
+</html>

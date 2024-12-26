@@ -1,0 +1,1055 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\models\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\models\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\forms.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\forms.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\completed.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\completed.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\dashboard\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\dashboard\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\dashboard\\dashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\dashboard\\dashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\models\\whish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\models\\whish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\dashboard\\userdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\dashboard\\userdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\adddep.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\adddep.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\addservice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\addservice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\addservice.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\addservice.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\deletetran.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\deletetran.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\deletetran.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\deletetran.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\dashboard\\userdashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\dashboard\\userdashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\models\\transactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\models\\transactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\ongoing.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\ongoing.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\completed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\completed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\ongoing.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\ongoing.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\forms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\forms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\plans.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\plans.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\plans.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\plans.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\deletecourse.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\deletecourse.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\deletedep.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\deletedep.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\deletecourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\deletecourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\editcourse.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\editcourse.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\models\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\models\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\addcourse.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\addcourse.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\editcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\editcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\addevent.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\addevent.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\addcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\addcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\editevent.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\editevent.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\editevent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\editevent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\addevent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\addevent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\deleteevent.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\deleteevent.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\deleteevent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\deleteevent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\editdep.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\editdep.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\editdep.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\editdep.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\adddep.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\adddep.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\deletedep.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\deletedep.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\deleteservice.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\deleteservice.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\deleteservice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\deleteservice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\departments.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\departments.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\deleteadmin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\deleteadmin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\deleteadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\deleteadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\departments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\departments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\events.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\events.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\servicelist.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\servicelist.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\servicelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\servicelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\deleteuser.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\deleteuser.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\switch.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\switch.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\switch.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\switch.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\courses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\courses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\events.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\events.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\courses.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\courses.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\pages\\services.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\pages\\services.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|c:\\users\\user\\desktop\\final project data\\project\\seniorproject\\seniorproject\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{699E3728-4330-4B8D-A9AC-6AC5B69FB45F}|SeniorProject\\SeniorProject.csproj|solutionrelative:seniorproject\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-09T09:23:42.854Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DAL.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Models\\DAL.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Models\\DAL.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Models\\DAL.cs",
+              "RelativeToolTip": "SeniorProject\\Models\\DAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOMEAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T09:15:02.235Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DashBoard.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DashBoard\\DashBoard.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\DashBoard\\DashBoard.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DashBoard\\DashBoard.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\DashBoard\\DashBoard.cshtml.cs",
+              "ViewState": "AgIAAAwAAADAzMzMzMwuwBcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T21:24:18.966Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DashBoard.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DashBoard\\DashBoard.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\DashBoard\\DashBoard.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DashBoard\\DashBoard.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\DashBoard\\DashBoard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHgDAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-12T16:04:52.908Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserDashBoard.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DashBoard\\UserDashBoard.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\DashBoard\\UserDashBoard.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DashBoard\\UserDashBoard.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\DashBoard\\UserDashBoard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T21:36:34.332Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserDashBoard.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DashBoard\\UserDashBoard.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\DashBoard\\UserDashBoard.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DashBoard\\UserDashBoard.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\DashBoard\\UserDashBoard.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T23:56:45.687Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Forms.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Forms.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\Forms.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Forms.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\Forms.cshtml.cs",
+              "ViewState": "AgIAAEIAAADQzMzMzMwzwF4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T08:55:55.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Completed.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Completed.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\Completed.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Completed.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\Completed.cshtml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T22:59:32.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddDep.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\AddDep.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\AddDep.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\AddDep.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\AddDep.cshtml",
+              "ViewState": "AgIAAM0AAAAAMzMzMzMbwM8AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-22T08:08:45.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Whish.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Models\\Whish.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Models\\Whish.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Models\\Whish.cs",
+              "RelativeToolTip": "SeniorProject\\Models\\Whish.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAzwAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T02:29:28.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AddService.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\AddService.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\AddService.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\AddService.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\AddService.cshtml",
+              "ViewState": "AgIAAPIAAAAAAAAAAAAQwPoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T21:44:17.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddService.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\AddService.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\AddService.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\AddService.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\AddService.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T21:45:21.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DeleteTran.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteTran.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\DeleteTran.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteTran.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\DeleteTran.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T00:56:40.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DeleteTran.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteTran.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\DeleteTran.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteTran.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\DeleteTran.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-23T00:56:35.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Transactions.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Models\\Transactions.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Models\\Transactions.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Models\\Transactions.cs",
+              "RelativeToolTip": "SeniorProject\\Models\\Transactions.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAArwA0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T23:37:41.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Logout.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Logout.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\Logout.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Logout.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\Logout.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T23:27:00.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Logout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Logout.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\Logout.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Logout.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\Logout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-22T23:26:55.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "EditCourse.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\EditCourse.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\EditCourse.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\EditCourse.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\EditCourse.cshtml.cs",
+              "ViewState": "AgIAABAAAACAmZmZmZkVwBwAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T16:11:16.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "EditCourse.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\EditCourse.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\EditCourse.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\EditCourse.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\EditCourse.cshtml",
+              "ViewState": "AgIAAL0AAAAAmZmZmZkVwNEAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-22T16:00:30.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Completed.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Completed.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\Completed.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Completed.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\Completed.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-22T22:59:26.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Ongoing.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Ongoing.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\Ongoing.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Ongoing.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\Ongoing.cshtml.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAADwvwwAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T22:58:32.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Ongoing.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Ongoing.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\Ongoing.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Ongoing.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\Ongoing.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-22T22:58:26.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "SeniorProject\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "SeniorProject\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-08T19:13:32.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DeleteCourse.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteCourse.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\DeleteCourse.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteCourse.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\DeleteCourse.cshtml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T16:28:06.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DeleteCourse.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteCourse.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\DeleteCourse.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteCourse.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\DeleteCourse.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-22T16:28:01.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "EditEvent.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\EditEvent.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\EditEvent.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\EditEvent.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\EditEvent.cshtml.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwAwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T15:07:12.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "EditEvent.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\EditEvent.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\EditEvent.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\EditEvent.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\EditEvent.cshtml",
+              "ViewState": "AgIAAOkAAAAAMjMzMzMbwPEAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-22T15:04:47.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AddCourse.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\AddCourse.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\AddCourse.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\AddCourse.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\AddCourse.cshtml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAwBYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T15:55:49.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "AddCourse.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\AddCourse.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\AddCourse.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\AddCourse.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\AddCourse.cshtml",
+              "ViewState": "AgIAALkAAAAAAAAAAAAAwAsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-22T15:50:12.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "DeleteEvent.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteEvent.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\DeleteEvent.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteEvent.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\DeleteEvent.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T15:41:59.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "DeleteEvent.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteEvent.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\DeleteEvent.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteEvent.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\DeleteEvent.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-22T15:41:44.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AddEvent.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\AddEvent.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\AddEvent.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\AddEvent.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\AddEvent.cshtml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T14:43:35.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "AddEvent.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\AddEvent.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\AddEvent.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\AddEvent.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\AddEvent.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-22T14:25:42.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DeleteDep.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteDep.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\DeleteDep.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteDep.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\DeleteDep.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T08:21:56.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "DeleteDep.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteDep.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\DeleteDep.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteDep.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\DeleteDep.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-22T08:19:27.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "AddDep.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\AddDep.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\AddDep.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\AddDep.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\AddDep.cshtml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA+wAoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T08:08:53.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "EditDep.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\EditDep.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\EditDep.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\EditDep.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\EditDep.cshtml",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAAANoAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-22T08:34:40.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "EditDep.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\EditDep.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\EditDep.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\EditDep.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\EditDep.cshtml.cs",
+              "ViewState": "AgIAABUAAAAAMzMzMzPzvxsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T08:34:52.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "DeleteService.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteService.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\DeleteService.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteService.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\DeleteService.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T07:53:41.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "DeleteService.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteService.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\DeleteService.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteService.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\DeleteService.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-22T07:53:38.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "departments.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\departments.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\departments.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\departments.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\departments.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T21:45:44.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "departments.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\departments.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\departments.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\departments.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\departments.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T21:45:41.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Service.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Models\\Service.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Models\\Service.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Models\\Service.cs",
+              "RelativeToolTip": "SeniorProject\\Models\\Service.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAlwAkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T21:28:23.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "DeleteAdmin.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteAdmin.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\DeleteAdmin.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteAdmin.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\DeleteAdmin.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T21:10:40.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "DeleteAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteAdmin.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\DeleteAdmin.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteAdmin.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\DeleteAdmin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T21:07:02.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Switch.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Switch.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\Switch.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Switch.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\Switch.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T20:51:09.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Switch.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Switch.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\Switch.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Switch.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\Switch.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T20:51:08.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "Events.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Events.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\Events.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Events.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\Events.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAFoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T10:52:52.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "Courses.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Courses.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\Courses.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Courses.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\Courses.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T08:31:27.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Courses.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Courses.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\Courses.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Courses.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\Courses.cshtml",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAAAGAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T08:08:46.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Courses.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Models\\Courses.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Models\\Courses.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Models\\Courses.cs",
+              "RelativeToolTip": "SeniorProject\\Models\\Courses.cs",
+              "ViewState": "AgIAAA0AAACAmZmZmZkXwA4AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T07:45:58.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Forms.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Forms.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\Forms.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Forms.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\Forms.cshtml",
+              "ViewState": "AgIAABECAAAANjMzMzMvwD8EAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-19T07:34:09.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Events.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Events.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\Events.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Events.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\Events.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T11:00:39.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Models\\Person.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Models\\Person.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Models\\Person.cs",
+              "RelativeToolTip": "SeniorProject\\Models\\Person.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T23:37:00.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "DeleteUser.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteUser.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\DeleteUser.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\DeleteUser.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\DeleteUser.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T15:24:57.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "ServiceList.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\ServiceList.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\ServiceList.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\ServiceList.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\ServiceList.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T09:01:34.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "ServiceList.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\ServiceList.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\ServiceList.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\ServiceList.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\ServiceList.cshtml",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAAFoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-19T09:01:32.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Login.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\Login.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Login.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\Login.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAWwFUAAACEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T18:47:41.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Login.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\Login.cshtml.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAADgvwwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T11:49:44.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "plans.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\plans.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\plans.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\plans.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\plans.cshtml",
+              "ViewState": "AgIAADoBAAAAZmZmZmYkwG4BAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-12T15:16:16.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "plans.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\plans.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\plans.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\plans.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\plans.cshtml.cs",
+              "ViewState": "AgIAABsAAADAzMzMzMwawCEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T15:11:16.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Services.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Services.cshtml.cs",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\Services.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Services.cshtml.cs",
+              "RelativeToolTip": "SeniorProject\\Pages\\Services.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T17:37:48.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Services.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Services.cshtml",
+              "RelativeDocumentMoniker": "SeniorProject\\Pages\\Services.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\Pages\\Services.cshtml",
+              "RelativeToolTip": "SeniorProject\\Pages\\Services.cshtml",
+              "ViewState": "AgIAAAcAAABAMzMzMzMTwCIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T17:05:47.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "SeniorProject\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Final Project Data\\Project\\SeniorProject\\SeniorProject\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "SeniorProject\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAWwE8AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-09T09:10:15.424Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

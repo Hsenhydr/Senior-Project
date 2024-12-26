@@ -1,0 +1,117 @@
+﻿@page
+@model SeniorProject.Pages.CoursesModel
+@using SeniorProject.Models;
+@{
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" >
+<style>
+
+    body {
+    background: #5e84a1;
+    }
+
+    .container {
+    max-width: 1400px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+    }
+
+    .course-card {
+    width: 100%;
+    height: 450px;
+    background: rgba(245, 245, 245, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    perspective: 1000px;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .course-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    }
+
+    .course-card:hover .course-inner {
+    transform: rotateY(180deg);
+    }
+
+    .course-front,
+    .course-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    padding: 1rem;
+    box-sizing: border-box;
+    }
+
+    .course-front {
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+    .course-back {
+    background: rgba(255, 255, 255, 0.15);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+    .course-card h3 {
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+    }
+
+    .course-card p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+    }
+</style>
+<body>
+    <h1 class="text-center py-3 text-white pt-5">Available Courses</h1>
+    <div class="container">
+        @{
+            foreach (Courses course in Model.courselist)
+            {
+        <div class="course-card">
+            <div class="course-inner">
+                <div class="course-front">
+                    <h3>@course.Title</h3>
+                    <p><i class="fas fa-dollar-sign"></i> <strong>Price:</strong><span style="color:#5e84a1"> $@course.Price</span></p>
+                    <p><i class="fas fa-calendar-alt"></i> <strong>Start Date:</strong> @course.StartDate</p>
+                </div>
+                <div class="course-back">
+                    <p>
+                        <i class="fas fa-book-open"></i> <strong>Description:</strong> @course.Description
+                    </p>
+                    <p><i class="fas fa-user"></i> <strong>Instructor:</strong> @course.Instructor</p>
+                    <p><i class="fas fa-clock"></i> <strong>Duration:</strong> @course.Duration weeks</p>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> @course.Location</p>
+                </div>
+            </div>
+        </div>
+            }
+            }
+       
+        </div>
+</body>

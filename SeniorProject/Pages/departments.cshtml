@@ -1,0 +1,25 @@
+﻿@page
+@using SeniorProject.Models;
+@model SeniorProject.Pages.departmentsModel
+<main>
+    <i class="bi bi-arrow-90deg-up arrowup"></i>
+    <h1 class="deptitle">Departments</h1>
+    <h5 class="depdesc">At <span>Media Horizon</span>, our diverse departments work in harmony to deliver exceptional media solutions. From creative development and strategic planning to production and digital management, each team brings expertise and innovation to every project. We are committed to achieving excellence and driving success across all facets of media and communication.</h5>
+    <div class="department">
+        @{
+            foreach(Department dp in Model.list)
+            {
+                <div class="dep">
+                    <div class="card">
+                        <img src="/Departments/@dp.Image" alt="preview img">
+                        <div class="card-body">
+                            <h2 class="card-title">@dp.Title</h2>
+                            <p class="card-text">@dp.Description</p>
+                            <a href="/services/?depid=@dp.DepartmentId" class="btn btn-primary">Explore Our Services</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</main>

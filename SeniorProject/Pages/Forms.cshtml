@@ -1,0 +1,1088 @@
+﻿@page
+@model SeniorProject.Pages.FormsModel
+@using SeniorProject.Models;
+@{
+    int serviceId = Convert.ToInt32(Request.Query["serviceId"]);
+    string serviceType = Request.Query["formType"];
+}
+<head>
+    <!-- Include Font Awesome CDN link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <style>
+        /* Global Styles */
+
+
+        main {
+            background-color: #5e84a1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 130vh;
+        }
+
+        /* Form Container */
+        .seo-form-container {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            height: 120vh;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            overflow: auto;
+        }
+
+        /* Left Section */
+        .form-left-section {
+            width: 50%;
+            padding: 20px;
+        }
+
+            .form-left-section h2 {
+                font-size: 30px;
+                font-weight: 700;
+                color: #333;
+                margin-bottom: 10px;
+            }
+
+            .form-left-section .form-subtitle {
+                font-size: 16px;
+                color: #555;
+                margin-bottom: 20px;
+            }
+
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .form-group {
+            width: 48%;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+            .form-group label {
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                color: #333;
+                margin-bottom: 8px;
+            }
+
+                .form-group label i {
+                    margin-right: 10px;
+                    color: #5e84a1; /* Primary color */
+                }
+
+            /* Input Styling */
+            .form-group input,
+            .form-group textarea {
+                width: 100%;
+                padding: 14px 18px;
+                font-size: 16px;
+                border-radius: 8px;
+                border: 1px solid #ccc;
+                outline: none;
+                transition: all 0.3s ease;
+            }
+
+                /* Focus Effect */
+                .form-group input:focus,
+                .form-group textarea:focus {
+                    border-color: #5e84a1; /* Primary color */
+                    box-shadow: 0 0 10px rgba(94, 132, 161, 0.3);
+                }
+
+        /* Submit Button */
+        .submit-button {
+            display: inline-block;
+            margin-top: 10px;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+            width: 60%;
+            margin: 20px 0px 0px 0px;
+            background-color: #5e84a1;
+            padding: 10px 0px;
+            border-radius: 16px 16px 16px 16px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+            .submit-button:hover {
+                background-color: #4b6f85;
+                transform: translateY(-2px);
+            }
+
+        /* Right Section */
+        .form-right-section {
+            width: 50%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .form-right-section img {
+                max-width: 100%;
+                border-radius: 12px;
+                /* box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); */
+            }
+
+        /* Mobile Responsiveness */
+        @@media (max-width: 768px) {
+            .seo-form-container {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            .form-left-section,
+            .form-right-section {
+                width: 100%;
+                padding: 10px;
+            }
+
+                .form-left-section h2 {
+                    font-size: 24px;
+                }
+
+                .form-left-section .form-subtitle {
+                    font-size: 14px;
+                }
+
+            .form-group {
+                width: 100%;
+            }
+
+            .submit-button {
+                font-size: 16px;
+            }
+        }
+    </style>
+
+</head>
+
+<main>
+
+    @if (serviceType == "seo")
+    {
+        <main>
+        <div class="seo-form-container">
+            <div class="form-left-section">
+                <h2>SEO Service Request</h2>
+                <p class="form-subtitle">
+                    Fill out the details below to request SEO services.
+                </p>
+                <form method="post" id="seoForm" asp-page-handler="seo">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nationalId"><i class="fas fa-id-card"></i> National ID</label>
+                            <input type="text"
+                                   name="NationalId"
+                                   id="nationalId"
+                                   class="input-field"
+                                   placeholder="Enter your national ID" />
+                            <h6 class="lead text-danger" style="font-size:12px;">National ID must be exactly 12 digits long.</h6>
+                        </div>
+                        <input type="hidden"  value="@serviceType" name="formtype"/>
+                        <input type="hidden"  value="@serviceId" name="serviceid"/>
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                            <input type="email"
+                                   name="Email"
+                                   id="email"
+                                   class="input-field"
+                                   
+                                   placeholder="Enter your email address" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName"><i class="fas fa-user"></i> First Name</label>
+                            <input type="text"
+                                   name="FirstName"
+                                   id="firstName"
+                                   class="input-field"
+                                   
+                                   placeholder="Enter your first name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName"><i class="fas fa-user"></i> Last Name</label>
+                            <input type="text"
+                                   name="LastName"
+                                   id="lastName"
+                                   class="input-field"
+                                   placeholder="Enter your last name" />
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="website"><i class="fas fa-globe"></i> Website</label>
+                            <input type="url"
+                                   name="Website"
+                                   id="website"
+                                   class="input-field"
+                                   
+                                   placeholder="Enter your website URL" />
+                        </div>
+                        <div class="form-group">
+                            <label for="currentSeoStatus"><i class="fas fa-chart-line"></i> Current SEO Status</label>
+                            <input type="text"
+                                   name="CurrentSeoStatus"
+                                   id="currentSeoStatus"
+                                   class="input-field"
+                                   
+                                   placeholder="Describe your current SEO status" />
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="monthlyBudget"><i class="fas fa-dollar-sign"></i> Monthly Budget</label>
+                            <input type="number"
+                                   name="MonthlyBudget"
+                                   id="monthlyBudget"
+                                   class="input-field"
+                                   min="0"
+                                   step="0.01"
+                                   
+                                   placeholder="Enter your budget" />
+                        </div>
+                        <div class="form-group">
+                            <label for="seoStartDate"><i class="fas fa-calendar-alt"></i> SEO Start Date</label>
+                            <input type="date" name="SeoStartDate" id="seoStartDate" class="input-field"  />
+                                <h6 class="lead text-danger" style="font-size:12px;">SEO Start Date must be at least 1 week after the current date.</h6>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="notes"><i class="fas fa-sticky-note"></i> Notes</label>
+                            <textarea name="notes"
+                                      id="notes"
+                                      class="input-field"
+                                      rows="4"
+                                      
+                                      placeholder="Any additional details..."></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+            </div>
+
+            <div class="form-right-section">
+					<img src="~/forms/seoform.svg" />
+            </div>
+        </div>
+        </main>
+   }
+    else if (serviceType == "dev")
+    {
+        <main>
+            <div class="seo-form-container">
+                <div class="form-left-section">
+                    <h2>Development Service Request</h2>
+                    <p class="form-subtitle">
+                        Fill out the details below to request Development services.
+                    </p>
+                    <form method="post" id="devForm" asp-page-handler="Dev">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nationalId"><i class="fas fa-id-card"></i> National ID</label>
+                                <input type="text"
+                                       name="NationalId"
+                                       id="nationalId"
+                                       class="input-field"
+                                       placeholder="Enter your national ID"
+                                        />
+                                <h6 class="lead text-danger" style="font-size:12px;">National ID must be exactly 12 digits long.</h6>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                                <input type="email"
+                                       name="Email"
+                                       id="email"
+                                       class="input-field"
+                                       placeholder="Enter your email address"
+                                        />
+                                <input type="hidden" value="@serviceType" name="formtype" />
+                                <input type="hidden" value="@serviceId" name="serviceid" />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName"><i class="fas fa-user"></i> First Name</label>
+                                <input type="text"
+                                       name="FirstName"
+                                       id="firstName"
+                                       class="input-field"
+                                       placeholder="Enter your first name"
+                                        />
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName"><i class="fas fa-user"></i> Last Name</label>
+                                <input type="text"
+                                       name="LastName"
+                                       id="lastName"
+                                       class="input-field"
+                                       placeholder="Enter your last name"
+                                        />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="projectName"><i class="fas fa-project-diagram"></i> Project Name</label>
+                                <input type="text"
+                                       name="ProjectName"
+                                       id="projectName"
+                                       class="input-field"
+                                       placeholder="Enter the project name"
+                                        />
+                            </div>
+                            <div class="form-group">
+                                <label for="projectType"><i class="fas fa-list-alt"></i> Project Type</label>
+                                <input type="text"
+                                       name="ProjectType"
+                                       id="projectType"
+                                       class="input-field"
+                                       placeholder="Enter the project type"
+                                       />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="">
+                                <label for="responsive" class="form-label">
+                                    <i class="fas fa-mobile-alt"></i> Responsive
+                                </label>
+                                <div>
+                                    <div class="d-flex align-items-center ms-5 g-3 p-2">
+                                        <div class="form-check px-3">
+                                            <input type="radio" class="form-check-input" id="responsive" name="Responsive" value="Responsive"  />
+                                            <label class="form-check-label" for="responsive">Yes</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="non-responsive" name="Responsive" value="Non-responsive"  />
+                                            <label class="form-check-label" for="non-responsive">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="platform"><i class="fas fa-laptop"></i> Platform</label>
+                                <select name="Platform" id="platform" class="input-field" style="width: 100%; padding: 14px 18px; font-size: 16px; border-radius: 8px; border: 1px solid #ccc; outline: none; transition: all 0.3s ease;">
+                                    <option value="web">Website</option>
+                                    <option value="mobile">Mobile App</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="budget"><i class="fas fa-money-bill-wave"></i> Budget</label>
+                                <div class="d-flex align-items-center justify-content-between" style="width: 100%; max-width: 100%;">
+                                    <span id="budget-min">$600</span>
+                                    <input type="range"
+                                           name="Budget"
+                                           id="budget"
+                                           class="input-field"
+                                           min="600"
+                                           max="10000"
+                                           step="100"
+                                           oninput="document.getElementById('budget-value').innerText = '$' + this.value;"
+                                            />
+                                    <span id="budget-value">$600</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="timeline"><i class="fas fa-calendar-alt"></i> Timeline</label>
+                                <input type="date"
+                                       name="Timeline"
+                                       id="timeline"
+                                       class="input-field"
+                                        />
+                                <h6 class="lead text-danger" style="font-size:12px;">Timeline must be at least 3 weeks from today.</h6>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="notes"><i class="fas fa-sticky-note"></i> Notes</label>
+                                <textarea name="Notes"
+                                          id="notes"
+                                          class="input-field"
+                                          rows="4"
+                                          placeholder="Any additional details..."></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit-button">Submit</button>
+                    </form>
+                </div>
+
+                <div class="form-right-section">
+                    <img src="~/forms/dev.svg" />
+                </div>
+            </div>
+        </main>
+
+    }
+    else if (serviceType == "event")
+    {
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        <style>
+            main {
+                background-color: #5e84a1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 110vh;
+            }
+
+            .seo-form-container {
+                height: 90vh;
+            }
+
+
+            .available-courses-link {
+                display: block; /* Makes the link a block element */
+                text-align: center; /* Centers the text */
+                margin-bottom: 20px; /* Adds space below the link */
+                font-size: 18px; /* Adjust font size */
+                color: #5e84a1; /* Primary color */
+                font-weight: bold; /* Makes it bold */
+                margin: 0 auto;
+            }
+        </style>
+        <main>
+            <div class="seo-form-container">
+                <div class="form-left-section">
+                    <h2>Event Attending Request</h2>
+                    <a href="/Events" class="available-courses-link">
+                        <i class="fas fa-link mx-2"> </i>Check Available Events
+                    </a>
+                    <p class="form-subtitle">
+                        Fill out the details below to Attend the Event.
+                    </p>
+                    <form method="post" id="eventForm" asp-page-handler="event">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nationalId"><i class="fas fa-id-card"></i> National ID</label>
+                                <input type="text"
+                                       name="NationalId"
+                                       id="nationalId"
+                                       class="input-field"
+                                       placeholder="Enter your national ID" />
+                                <h6 class="lead text-danger" style="font-size:12px;">National ID must be exactly 12 digits long.</h6>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                                <input type="email"
+                                       name="Email"
+                                       id="email"
+                                       class="input-field"
+                                       placeholder="Enter your email address" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName"><i class="fas fa-user"></i> First Name</label>
+                                <input type="text"
+                                       name="FirstName"
+                                       id="firstName"
+                                       class="input-field"
+                                       placeholder="Enter your first name" />
+                                <input type="hidden" value="@serviceType" name="formtype" />
+                                <input type="hidden" value="@serviceId" name="serviceid" />
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName"><i class="fas fa-user"></i> Last Name</label>
+                                <input type="text"
+                                       name="LastName"
+                                       id="lastName"
+                                       class="input-field"
+                                       placeholder="Enter your last name" />
+                            </div>
+                        </div>
+
+                 
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="Eventname"><i class="fas fa-calendar-alt"></i> Event Name</label>
+                                <select name="Eventname" id="Eventname" class="input-field" style="width: 100%; padding: 14px 18px; font-size: 16px; border-radius: 8px; border: 1px solid #ccc; outline: none; transition: all 0.3s ease;">
+                                    <option value="">-- Select a Title --</option>
+                                    @foreach (Events ev in Model.eventlist)
+                                    {
+                                        <option value="@ev.Id" data-amount="@ev.Price">@ev.Title</option>
+                                    }
+                                       </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="notes"><i class="fas fa-sticky-note"></i> Notes</label>
+                                <textarea name="notes"
+                                          id="notes"
+                                          class="input-field"
+                                          rows="4"
+                                          placeholder="Any additional details..."></textarea>
+                            </div>
+                        </div>
+                        <input type="hidden" name="Amount" id="Amount" />
+                        <button type="submit" class="submit-button">Submit</button>
+                    </form>
+                </div>
+
+                <div class="form-right-section">
+                    <img src="~/forms/event.svg" />
+                </div>
+            </div>
+        </main>
+    }
+    else if (serviceType == "courses")
+    {
+        <style>
+            main {
+                background-color: #5e84a1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .seo-form-container {
+                height: 90vh;
+            }
+
+            .available-courses-link {
+                display: block; /* Makes the link a block element */
+                text-align: center; /* Centers the text */
+                margin-bottom: 20px; /* Adds space below the link */
+                font-size: 18px; /* Adjust font size */
+                color: #5e84a1; /* Primary color */
+                font-weight: bold; /* Makes it bold */
+                margin: 0 auto;
+            }
+
+        </style>  
+        <main>
+            <div class="seo-form-container">
+
+                <div class="form-left-section">
+ 
+
+                    <h2>Course Joining Request</h2>
+                    <a href="/courses" class="available-courses-link">
+                        <i class="fas fa-link mx-2"> </i>Check Available Courses
+                    </a>
+                    <p class="form-subtitle">
+                        Fill out the details below to Join us.
+                    </p>
+                    <form method="post" id="courseForm" asp-page-handler="Course">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nationalId"><i class="fas fa-id-card"></i> National ID</label>
+                                <input type="text"
+                                       name="NationalId"
+                                       id="nationalId"
+                                       class="input-field"
+                                       placeholder="Enter your national ID" />
+                                <h6 class="lead text-danger" style="font-size:12px;">National ID must be exactly 12 digits long.</h6>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                                <input type="email"
+                                       name="Email"
+                                       id="email"
+                                       class="input-field"
+                                       placeholder="Enter your email address" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName"><i class="fas fa-user"></i> First Name</label>
+                                <input type="text"
+                                       name="FirstName"
+                                       id="firstName"
+                                       class="input-field"
+                                       placeholder="Enter your first name" />
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName"><i class="fas fa-user"></i> Last Name</label>
+                                <input type="text"
+                                       name="LastName"
+                                       id="lastName"
+                                       class="input-field"
+                                       placeholder="Enter your last name" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="Coursename"><i class="fas fa-graduation-cap"></i> Course Name</label>
+                                <select name="Coursename" id="Coursename" class="input-field" style="width: 100%; padding: 14px 18px; font-size: 16px; border-radius: 8px; border: 1px solid #ccc; outline: none; transition: all 0.3s ease;">
+                                    <option value="">-- Select a Title --</option>
+                                    @foreach (Courses course in Model.courselist)
+                                    {
+                                        <option value="@course.Title">@course.Title</option>
+                                    }
+                                </select>
+                                <input type="hidden" value="@serviceType" name="formtype" />
+                                <input type="hidden" value="@serviceId" name="serviceid" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="notes"><i class="fas fa-sticky-note"></i> Notes</label>
+                                <textarea name="notes"
+                                          id="notes"
+                                          class="input-field"
+                                          rows="4"
+                                          placeholder="Any additional details..."></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit-button">Submit</button>
+                    </form>
+                </div>
+
+                <div class="form-right-section">
+                    <img src="~/forms/course.svg" />
+                </div>
+
+            </div>
+        </main>
+
+    }
+
+    else if (serviceType == "wp")
+    {
+        <style>
+            main {
+                background-color: #5e84a1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .seo-form-container {
+                height: 90vh;
+            }
+
+            .available-courses-link {
+                display: block; /* Makes the link a block element */
+                text-align: center; /* Centers the text */
+                margin-bottom: 20px; /* Adds space below the link */
+                font-size: 18px; /* Adjust font size */
+                color: #5e84a1; /* Primary color */
+                font-weight: bold; /* Makes it bold */
+                margin: 0 auto;
+            }
+
+        </style>
+        <main>
+            <div class="seo-form-container">
+                <div class="form-left-section">
+                    <h2>Personal Training Request</h2>
+                    <p class="form-subtitle">
+                        Fill out the details below to Join us.
+                    </p>
+                    <form method="post" id="wpform" asp-page-handler="wp">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nationalId"><i class="fas fa-id-card"></i> National ID</label>
+                                <input type="text"
+                                       name="NationalId"
+                                       id="nationalId"
+                                       class="input-field"
+                                       placeholder="Enter your national ID" />
+                                <h6 class="lead text-danger" style="font-size:12px;">National ID must be exactly 12 digits long.</h6>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                                <input type="email"
+                                       name="Email"
+                                       id="email"
+                                       class="input-field"
+                                       placeholder="Enter your email address" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName"><i class="fas fa-user"></i> First Name</label>
+                                <input type="text"
+                                       name="FirstName"
+                                       id="firstName"
+                                       class="input-field"
+                                       placeholder="Enter your first name" />
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName"><i class="fas fa-user"></i> Last Name</label>
+                                <input type="text"
+                                       name="LastName"
+                                       id="lastName"
+                                       class="input-field"
+                                       placeholder="Enter your last name" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="course"><i class="fas fa-graduation-cap"></i> Course Name</label>
+                         <textarea name="course" id="course" class="input-field" rows="4" placeholder="what courses are you interested in?"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="notes"><i class="fas fa-sticky-note"></i> Notes</label>
+                                <textarea name="notes"
+                                          id="notes"
+                                          class="input-field"
+                                          rows="4"
+                                          placeholder="Any additional details..."></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit-button">Submit</button>
+                    </form>
+                </div>
+
+                <div class="form-right-section">
+                    <img src="~/forms/course.svg" />
+                </div>
+
+            </div>
+        </main>
+
+    }
+    else
+    {
+        <p>Invalid service type.</p>
+    }
+</main>
+<script>
+    document.getElementById('seoForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent form submission to handle validation
+
+        // Retrieve form data
+        const nationalId = document.getElementById('nationalId').value;
+        const email = document.getElementById('email').value;
+        const firstName = document.getElementById('firstName').value;
+        const lastName = document.getElementById('lastName').value;
+        const website = document.getElementById('website').value;
+        const currentSeoStatus = document.getElementById('currentSeoStatus').value;
+        const monthlyBudget = document.getElementById('monthlyBudget').value;
+        const seoStartDate = document.getElementById('seoStartDate').value;
+        const notes = document.getElementById('notes').value;
+
+        // Validate National ID (12 digits)
+        const nationalIdRegex = /^\d{12}$/;
+        if (!nationalIdRegex.test(nationalId)) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Invalid National ID',
+                text: 'National ID must be exactly 12 digits long.',
+            });
+            return;
+        }
+
+        // Validate SEO Start Date (at least 1 week in the future)
+        const today = new Date();
+        const startDate = new Date(seoStartDate);
+        const minDate = new Date(today.setDate(today.getDate() + 7)); // Add 7 days to current date
+
+        if (startDate < minDate) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Invalid Start Date',
+                text: 'SEO Start Date must be at least 1 week after the current date.',
+            });
+            return;
+        }
+
+        // Check if any required field is empty
+        if (!nationalId || !email || !firstName || !lastName || !website || !currentSeoStatus || !monthlyBudget || !seoStartDate) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Missing Fields',
+                text: 'Please fill in all the required fields.',
+            });
+            return;
+        }
+
+        // If all validations pass, submit the form
+        Swal.fire({
+            icon: 'success',
+            title: 'Form Submitted',
+            text: 'Your SEO service request has been successfully submitted.',
+        }).then(() => {
+            // Submit the form after the success message
+            e.target.submit();  // This will submit the form, triggering OnPostseo
+        });
+    });
+</script>
+
+<script>
+    document.getElementById("devForm").addEventListener("submit", function(event) {
+        event.preventDefault();  // Prevent form submission for validation
+
+        var form = document.getElementById('devForm');
+        var nationalId = document.getElementById('nationalId').value.trim();
+        var timeline = document.getElementById('timeline').value.trim();
+        var responsive = document.querySelector('input[name="Responsive"]:checked');
+        var missingFields = [];
+        var isValid = true;
+
+        // Check if National ID is 12 digits
+        if (!nationalId || nationalId.length !== 12 || !/^\d{12}$/.test(nationalId)) {
+            isValid = false;
+            missingFields.push("National ID must be exactly 12 digits long.");
+        }
+
+        // Check that all other required fields are not empty
+        var fields = form.querySelectorAll('input, select, textarea');
+        fields.forEach(function(field) {
+            if (!field.value.trim() && field.id !== 'notes') {  // Exclude Notes from validation
+                isValid = false;
+                missingFields.push(field.previousElementSibling.textContent + " is required.");
+            }
+        });
+
+        // Check if responsive option is selected
+        if (!responsive) {
+            isValid = false;
+            missingFields.push("You must select whether the design is responsive or not.");
+        }
+
+        // Check if timeline is at least 3 weeks from today
+        var today = new Date();
+        var minDate = new Date();
+        minDate.setDate(today.getDate() + 21); // Set minimum date to 3 weeks from today
+        var selectedDate = new Date(timeline);
+        if (selectedDate < minDate) {
+            isValid = false;
+            missingFields.push("Timeline must be at least 3 weeks from today.");
+        }
+
+        // Show SweetAlert2 alert if validation fails
+        if (!isValid) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Please fill all the required fields correctly',
+                html: '<ul>' + missingFields.map(field => `<li>${field}</li>`).join('') + '</ul>',
+                confirmButtonText: 'OK'
+            });
+        } else {
+            // Remove the event listener to avoid preventDefault being called again
+            form.removeEventListener("submit", arguments.callee);
+
+            // Allow the form to submit naturally, which will trigger OnPost in Razor Page
+            form.submit();
+        }
+    });
+</script>
+
+
+@* //course *@
+<script>
+    document.getElementById('courseForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent form submission to validate first
+
+        let nationalId = document.getElementById('nationalId').value;
+        let firstName = document.getElementById('firstName').value;
+        let lastName = document.getElementById('lastName').value;
+        let courseName = document.getElementById('Coursename').value;
+
+        let errorMessages = []; // Array to hold error messages
+
+        // Validate National ID (exactly 12 digits)
+        if (!/^\d{12}$/.test(nationalId)) {
+            errorMessages.push('<li>National ID must be exactly 12 digits long.</li>');
+        }
+
+        // Validate First Name
+        if (firstName.trim() === '') {
+            errorMessages.push('<li>Please enter your first name.</li>');
+        }
+
+        // Validate Last Name
+        if (lastName.trim() === '') {
+            errorMessages.push('<li>Please enter your last name.</li>');
+        }
+
+        // Validate Course Name
+        if (courseName === '') {
+            errorMessages.push('<li>Please select a course name.</li>');
+        }
+
+        // If there are any validation errors, display them in an unordered list
+        if (errorMessages.length > 0) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Please fix the following errors:',
+                html: '<ul>' + errorMessages.join('') + '</ul>',
+            });
+            return;
+        }
+
+        // If all validations pass, submit the form
+        Swal.fire({
+            icon: 'success',
+            title: 'Form Submitted',
+            text: 'Your form has been successfully submitted.',
+        }).then(() => {
+            document.getElementById('courseForm').submit(); // Submit the form after validation
+        });
+    });
+</script>
+
+@* //event *@
+<script>
+    document.getElementById('eventForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent form submission for validation
+
+        // Get form elements
+        var nationalId = document.getElementById('nationalId').value;
+        var email = document.getElementById('email').value;
+        var firstName = document.getElementById('firstName').value;
+        var lastName = document.getElementById('lastName').value;
+        var eventName = document.getElementById('Eventname').value;
+        var notes = document.getElementById('notes').value;
+
+        let errorMessages = []; // Array to hold error messages
+
+        // Validate National ID (exactly 12 digits)
+        if (!/^\d{12}$/.test(nationalId)) {
+            errorMessages.push('National ID must be exactly 12 digits long.');
+        }
+
+  
+
+        // Validate First Name
+        if (firstName.trim() === '') {
+            errorMessages.push('Please enter your first name.');
+        }
+
+        // Validate Last Name
+        if (lastName.trim() === '') {
+            errorMessages.push('Please enter your last name.');
+        }
+
+        // Validate Event Name selection
+        if (eventName === '') {
+            errorMessages.push('Please select an event name.');
+        }
+
+        // If there are any validation errors, show them
+        if (errorMessages.length > 0) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Please fix the following errors:',
+                html: '<ul>' + errorMessages.map(msg => `<li>${msg}</li>`).join('') + '</ul>',
+            });
+            return;
+        }
+
+        // If all validations pass, show success and submit the form
+        Swal.fire({
+            icon: 'success',
+            title: 'Form Submitted Successfully',
+            text: 'Your form has been submitted!',
+        }).then(() => {
+            document.getElementById('eventForm').submit(); // Submit the form after success message
+        });
+    });
+</script>
+
+
+                @* wp *@
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    document.getElementById('wpform').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // Get form values
+        const nationalId = document.getElementById('nationalId').value;
+        const firstName = document.getElementById('firstName').value;
+        const lastName = document.getElementById('lastName').value;
+        const course = document.getElementById('course').value;
+        const notes = document.getElementById('notes').value;
+
+        // Create an array to hold error messages
+        let errors = [];
+
+        // Validate National ID (12 digits)
+        if (!/^\d{12}$/.test(nationalId)) {
+            errors.push('National ID must be exactly 12 digits long.');
+        }
+
+        // Validate First Name
+        if (!firstName.trim()) {
+            errors.push('Please enter your first name.');
+        }
+
+        // Validate Last Name
+        if (!lastName.trim()) {
+            errors.push('Please enter your last name.');
+        }
+
+        // Validate Course Name
+        if (!course.trim()) {
+            errors.push('Please enter the course you are interested in.');
+        }
+
+        // If there are errors, display them in a SweetAlert2 list
+        if (errors.length > 0) {
+            let errorList = '<ul>';
+            errors.forEach(error => {
+                errorList += `<li>${error}</li>`;
+            });
+            errorList += '</ul>';
+
+            Swal.fire({
+                icon: 'error',
+                title: 'Form Validation Errors',
+                html: errorList
+            });
+            return;
+        }
+
+        // If everything is valid, prepare the WhatsApp message
+        let number = "+96178976841"; // Replace with the desired WhatsApp number
+        let message = encodeURIComponent(
+            "National ID: " + nationalId + "\n" +
+            "First Name: " + firstName + "\n" +
+            "Last Name: " + lastName + "\n" +
+            "Course: " + course + "\n" +
+            "Notes: " + notes + "\n"
+        );
+
+        // Redirect to WhatsApp with the prepared message
+        var url = "https://wa.me/" + number + "?text=" + message;
+        window.location.href = url;
+
+        // Optional: Show a success message
+        Swal.fire({
+            icon: 'success',
+            title: 'Form Submitted',
+            text: 'Your form has been successfully submitted. Redirecting to WhatsApp...',
+        });
+    });
+</script>
+
+
+            @* test *@
+<script>
+    document.getElementById('Eventname').addEventListener('change', function() {
+        // Get the selected option and its amount
+        var selectedOption = this.options[this.selectedIndex];
+        var amount = selectedOption.getAttribute('data-amount');
+
+        // Set the hidden input's value to the selected event's amount
+        document.getElementById('Amount').value = amount;
+    });
+</script>

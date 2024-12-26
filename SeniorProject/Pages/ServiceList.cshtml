@@ -1,0 +1,104 @@
+﻿@page
+@model SeniorProject.Pages.ServiceListModel
+@using SeniorProject.Models;
+
+@{
+}
+<style>
+    .search-bar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+        padding-top:20px;
+        background: #5e84a1
+    }
+
+        .search-bar .form-control {
+            width: 30%;
+            padding: 10px 15px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+            .search-bar .form-control:focus {
+                outline: none;
+                border-color: #007bff;
+                box-shadow: 0px 3px 8px rgba(0, 123, 255, 0.4);
+            }
+
+</style>
+
+<main>
+    <i class="bi bi-arrow-90deg-up arrowup"></i>
+    <h1 class="deptitle">All Services</h1>
+    <div class="search-bar">
+        <input type="text"
+               id="searchInput"
+               class="form-control"
+               placeholder="Search services by name..."
+               oninput="filterServices()" />
+    </div>
+    <div class="departmentlist servicefull">
+        @{
+            foreach (Service ser in Model.servicelist)
+            {
+                string serviceLink = "#"; // Default link
+
+                // Determine the link based on ServiceType
+                if (ser.ServiceType == "plan")
+                {
+                    serviceLink = $"/plans?serviceId={ser.Id}";
+                }
+                else if(ser.ServiceType == "seo")
+                {
+                    serviceLink = $"/Forms?serviceId={ser.Id}&formType=seo";
+                }
+                else if (ser.ServiceType == "dev")
+                {
+                    serviceLink = $"/Forms?serviceId={ser.Id}&formType=dev";
+                }
+                else if (ser.ServiceType == "event")
+                {
+                    serviceLink = $"/Forms?serviceId={ser.Id}&formType=event";
+                }
+                else if (ser.ServiceType == "courses")
+                {
+                    serviceLink = $"/Forms?serviceId={ser.Id}&formType=courses";
+                }
+                else if (ser.ServiceType == "wp")
+                {
+                    serviceLink = $"/Forms?serviceId={ser.Id}&formType=wp";
+                }
+
+                <div class="service" data-title="@ser.Title.ToLower()">
+                    <a href="@serviceLink" class="text-decoration-none">
+                        <div class="serviceimg"><img src="~/departments/@ser.Image" /></div>
+                        <div class="servicetitle">@ser.Title</div>
+                        <hr class="shr">
+                        <div class="servicedesc">@ser.Description</div>
+                    </a>
+                </div>
+            }
+        }
+    </div>
+</main>
+
+<script>
+    function filterServices() {
+        const query = document.getElementById("searchInput").value.toLowerCase();
+        const services = document.querySelectorAll(".service");
+
+        services.forEach(service => {
+            const title = service.getAttribute("data-title");
+            if (title.includes(query)) {
+                service.style.display = "block";
+            } else {
+                service.style.display = "none";
+            }
+        });
+    }
+</script>

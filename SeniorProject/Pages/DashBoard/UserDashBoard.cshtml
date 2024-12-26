@@ -1,0 +1,227 @@
+﻿@page
+@model SeniorProject.Pages.DashBoard.UserDashBoardModel
+@using SeniorProject.Models;
+
+@{
+    Layout = null;
+    string email = HttpContext.Session.GetString("email");
+    int active = new DAL().activetransaction(email);
+    int form = new DAL().formtransaction(email);
+}
+@functions {
+    string GetStatusClass(string status)
+    {
+        switch (status)
+        {
+            case "Pending":
+                return "text-warning"; // Yellow color for Pending
+            case "Ongoing":
+                return "text-info";    // Blue color for Ongoing
+            case "Completed":
+                return "text-success"; // Green color for Completed
+            default:
+                return "text-muted";   // Gray color for unknown status
+        }
+    }
+}
+
+<head>
+    <style>
+        @@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+        body {
+            font-family: "Quicksand" !important;
+            background-color: #f5f5f5;
+            
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .dashboard {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .summary {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+
+        .box {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 250px; /* Increased width of boxes */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+            .box:hover {
+                transform: translateY(-5px); /* Slight lift effect on hover */
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+            }
+
+            .box h3 {
+                font-size: 20px; /* Increased font size for titles */
+                margin-bottom: 10px;
+            }
+
+        .transactions,
+        .forms {
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 18px; /* Increased font size */
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 20px; /* Increased padding for larger cells */
+            text-align: left;
+        }
+
+        th {
+            background-color: #5e84a1; /* Primary color */
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+            th:hover {
+                background-color: #4d6b85; /* Darker hover effect on table header */
+            }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+            transition: background-color 0.3s ease;
+        }
+
+            tr:nth-child(even):hover {
+                background-color: #e0e0e0; /* Highlight row on hover */
+            }
+
+        .status-pending,
+        .status-ongoing {
+            background-color: yellow; /* Yellow color */
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .status-completed {
+            background-color: green; /* Green color */
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #5e84a1; /* Primary color */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            transition: background-color 0.3s ease;
+        }
+
+            footer:hover {
+                background-color: #4d6b85; /* Darken footer on hover */
+            }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="dashboard">
+            <div class="summary">
+                <div class="box">
+                    <h3>Active Transaction</h3>
+                    <p id="subscriptions-count">@active</p>
+                </div>
+                <div class="box">
+                    <h3>Forms Submitted</h3>
+                    <p id="forms-count">@form</p>
+                </div>
+            </div>
+            <div class="transactions">
+                <h2>Recent Transactions</h2>
+                <table id="transaction-table">
+                    <thead>
+                        <tr>
+                            <th>Transaction ID</th>
+                            <th>Service Title</th>
+                            <th>Plan Title</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       @{
+                           foreach (Transactions tr in Model.transactionlist)
+                        {
+                        <tr>
+                            <td>@tr.TransactionID</td>
+                            <td>@tr.Servicetitle</td>
+                            <td>@tr.PlanTitle</td>
+                            <td>@tr.TransactionDate</td>
+                            <td>$@tr.TransactionAmount</td>
+                            <td class="@GetStatusClass("Completed")">@tr.TransactionStatus</td>
+                        </tr>
+                        }
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="forms">
+                <h2>Recent Forms</h2>
+                <table id="forms-table">
+                    <thead>
+                        <tr>
+                            <th>Transaction ID</th>
+                            <th>Form Type</th>
+                            <th>Transaction Date</th>
+                            <th>Transaction Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            foreach (Transactions tr in Model.formlist)
+                            {
+                                <tr>
+                                    <td>@tr.TransactionID</td>
+                                    <td>@tr.FormType</td>
+                                    <td>@tr.TransactionDate</td>
+                                    <td>$@tr.TransactionAmount</td>
+                                    <td class="@GetStatusClass(tr.TransactionStatus) fw-bolder">@tr.TransactionStatus</td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>

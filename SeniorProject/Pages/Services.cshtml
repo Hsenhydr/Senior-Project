@@ -1,0 +1,52 @@
+﻿@page
+@model SeniorProject.Pages.ServicesModel
+@using SeniorProject.Models;
+@{
+}
+<main>
+    <i class="bi bi-arrow-90deg-up arrowup"></i>
+    <h1 class="deptitle">@Model.DepartmentTitle Services</h1>
+    <div class="departmentlist servicefull">
+        @{
+            foreach (Service ser in Model.servicelist)
+            {
+                string serviceLink = "#"; 
+
+                if(ser.ServiceType == "plan")
+                {
+                    serviceLink = $"/plans?serviceId={ser.Id}";
+                }
+                else if (ser.ServiceType == "seo")
+                {
+                    serviceLink = $"/Forms?serviceId={ser.Id}&formType=seo";
+                }
+                else if (ser.ServiceType == "dev")
+                {
+                    serviceLink = $"/Forms?serviceId={ser.Id}&formType=dev";
+                }
+                else if (ser.ServiceType == "event")
+                {
+                    serviceLink = $"/Forms?serviceId={ser.Id}&formType=event";
+                }
+                else if (ser.ServiceType == "courses")
+                {
+                    serviceLink = $"/Forms?serviceId={ser.Id}&formType=courses";
+                }
+                else if (ser.ServiceType == "wp")
+                {
+                    serviceLink = $"/Forms?serviceId={ser.Id}&formType=wp";
+                }
+
+                
+        <div class="service">
+                    <a href="@serviceLink" class="text-decoration-none">
+                       <div class="serviceimg"><img src="~/departments/@ser.Image" /></div>
+                <div class="servicetitle">@ser.Title</div>
+                <hr class="shr">
+                <div class="servicedesc">@ser.Description</div>
+            </a>
+        </div>
+            }
+        }
+    </div>
+</main>

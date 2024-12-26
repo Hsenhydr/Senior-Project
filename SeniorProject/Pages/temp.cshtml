@@ -1,0 +1,9 @@
+﻿@page
+@model SeniorProject.Pages.tempModel
+@{
+    string FirstName = HttpContext.Session.GetString("Fname") ?? "Guest";
+}
+
+<h1>
+    WELCOME @FirstName.
+</h1>

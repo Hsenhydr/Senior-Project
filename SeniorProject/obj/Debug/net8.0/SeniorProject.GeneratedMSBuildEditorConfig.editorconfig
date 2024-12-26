@@ -1,0 +1,161 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SeniorProject
+build_property.RootNamespace = SeniorProject
+build_property.ProjectDir = C:\Users\User\Desktop\Final Project Data\Project\SeniorProject\SeniorProject\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\User\Desktop\Final Project Data\Project\SeniorProject\SeniorProject
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/AddCourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQ291cnNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/AddDep.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkRGVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/AddEvent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkRXZlbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/AddService.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkU2VydmljZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/AddUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/Completed.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGxldGVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/Courses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/DashBoard/DashBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaEJvYXJkXERhc2hCb2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/DashBoard/UserDashBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaEJvYXJkXFVzZXJEYXNoQm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/DeleteAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/DeleteCourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlQ291cnNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/DeleteDep.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlRGVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/DeleteEvent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlRXZlbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/DeleteService.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlU2VydmljZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/DeleteTran.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlVHJhbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/DeleteUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/departments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGVwYXJ0bWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/EditCourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdENvdXJzZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/EditDep.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdERlcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/EditEvent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEV2ZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/Events.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXZlbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/Forms.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/Ongoing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT25nb2luZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/plans.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccGxhbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/ServiceList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZUxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/Services.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/Switch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3dpdGNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/temp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdGVtcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Final Project Data/Project/SeniorProject/SeniorProject/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-k5n64u4o50

@@ -1,0 +1,121 @@
+wwwroot\aboutus.jpg
+wwwroot\Clients\1.png
+wwwroot\Clients\10.png
+wwwroot\Clients\11.png
+wwwroot\Clients\2.png
+wwwroot\Clients\3.png
+wwwroot\Clients\4.png
+wwwroot\Clients\5.png
+wwwroot\Clients\6.png
+wwwroot\Clients\7.png
+wwwroot\Clients\8.png
+wwwroot\Clients\9.png
+wwwroot\comma.png
+wwwroot\css\site.css
+wwwroot\DashBoard\barblack.svg
+wwwroot\DashBoard\barblue.svg
+wwwroot\DashBoard\bargrey.svg
+wwwroot\Departments\cam.svg
+wwwroot\Departments\content creator.jpg
+wwwroot\Departments\content writing.svg
+wwwroot\Departments\courses.svg
+wwwroot\Departments\creative.jpg
+wwwroot\Departments\Digital and Social Media Department.jpg
+wwwroot\Departments\graphic design.svg
+wwwroot\Departments\Group 3.svg
+wwwroot\Departments\management.svg
+wwwroot\Departments\marketing.svg
+wwwroot\Departments\Mobile Development.svg
+wwwroot\Departments\motion graphic.svg
+wwwroot\Departments\personalized.svg
+wwwroot\Departments\Pricing 01.svg
+wwwroot\Departments\procuction.jpg
+wwwroot\Departments\Record.svg
+wwwroot\Departments\SEO.svg
+wwwroot\Departments\Strategy and Planning Department.jpg
+wwwroot\Departments\training.jpg
+wwwroot\Departments\Video prod logo.svg
+wwwroot\Departments\video script.svg
+wwwroot\Departments\video-editing_svgrepo.com 2.svg
+wwwroot\Departments\web dev.svg
+wwwroot\forms\course.svg
+wwwroot\forms\dev.svg
+wwwroot\forms\event.svg
+wwwroot\forms\seoForm.svg
+wwwroot\js\site.js
+wwwroot\lib\bootstrap\dist\css\bootstrap.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+wwwroot\lib\bootstrap\LICENSE
+wwwroot\lib\jquery\dist\jquery.js
+wwwroot\lib\jquery\dist\jquery.min.js
+wwwroot\lib\jquery\dist\jquery.min.map
+wwwroot\lib\jquery\LICENSE.txt
+wwwroot\lib\jquery-validation\dist\additional-methods.js
+wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+wwwroot\lib\jquery-validation\LICENSE.md
+wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\logo\logo1.jpg
+wwwroot\logo\logo1-removebg-preview.png
+wwwroot\logo\logonew.png
+wwwroot\logo\logonewc.png
+wwwroot\person-login.svg
+wwwroot\plans\Basic.svg
+wwwroot\plans\Premium.svg
+wwwroot\plans\Standard.svg
+wwwroot\teams\1.jpeg
+wwwroot\teams\1.jpg
+wwwroot\teams\2.jpeg
+wwwroot\teams\2.jpg
+wwwroot\teams\3.jpg
+wwwroot\teams\4.jpg
+wwwroot\teams\5 (2).jpg
+wwwroot\teams\5.jpg
+wwwroot\teams\6.jpg
+wwwroot\teams\8.jpg
+wwwroot\teams\me.jpg

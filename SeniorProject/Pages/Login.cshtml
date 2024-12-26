@@ -1,0 +1,123 @@
+﻿@page
+@model SeniorProject.Pages.LoginModel
+@{
+}
+@if (!string.IsNullOrEmpty(Model.error))
+{
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            Swal.fire({
+                title: 'Error!',
+                text: '@Model.error',
+                icon: 'error',
+                confirmButtonText: 'OK'
+            });
+        });
+    </script>
+
+}
+<style>
+    .areacode-container {
+        position: relative;
+    }
+
+    .areacode-plus {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 18px;
+        color: #6c757d;
+    }
+
+    #areacode {
+        padding-left: 25px;
+    }
+</style>
+<i class="bi bi-arrow-90deg-up arrowup"></i>
+<div class="flex">
+    <div class="container1" id="container1">
+        <div class="form-container sign-up">
+            <form asp-page-handler="signin" method="post" id="signup">
+                <h1 class="create">Create Account</h1>
+                <span class="create">Register with E-mail</span>
+                <div class="inputflex">
+                    <div class="pairs">
+                        <input style="font-size:15px" type="number" name="nationalid" placeholder="National ID" id="nationalid" value="">
+                        <span class="spanl">National ID must be 12 digits.</span>
+                        <div class="areacode-container">
+                            <span class="areacode-plus">+</span>
+                            <input type="tel" name="areacode" id="areacode" maxlength="3" placeholder="Area Code" />
+                        </div>
+                    </div>
+                    <div class="pairs">
+                        <input type="text" placeholder="First Name" name="fname">
+                        <input type="text" placeholder="Last Name" name="lname">
+                    </div>
+                    <div class="pairs">
+                        <select class="form-select" style="background-color:#eeeeee; color:#6c757d;" name="adress">
+                            <option value="ae">United Arab Emirates</option>
+                            <option value="dz">Algeria</option>
+                            <option value="bh">Bahrain</option>
+                            <option value="eg">Egypt</option>
+                            <option value="iq">Iraq</option>
+                            <option value="jo">Jordan</option>
+                            <option value="kw">Kuwait</option>
+                            <option value="lb" selected>Lebanon</option>
+                            <option value="ly">Libya</option>
+                            <option value="ma">Morocco</option>
+                            <option value="om">Oman</option>
+                            <option value="ps">Palestine</option>
+                            <option value="qa">Qatar</option>
+                            <option value="sa">Saudi Arabia</option>
+                            <option value="sd">Sudan</option>
+                            <option value="sy">Syria</option>
+                            <option value="tn">Tunisia</option>
+                            <option value="ye">Yemen</option>
+                        </select> 
+                    </div>
+                    <div class="pairs">
+                        <input type="tel" placeholder="Enter Phone Number" name="phn">
+                        <input type="text" placeholder="Enter E-mail" name="email">
+                        <span class="spanl">Phone number must be 8 digits.</span>
+                    </div>
+                    <div class="pairs">
+                        <input type="password" placeholder="Enter Password" name="pass">
+                        <span class="passwordspan">Password must be at least 8 characters long and contain both letters and numbers.</span>
+                        <input type="password" placeholder="Confirm Password" name="confirmpass">
+                    </div>
+                </div>
+                <button class="button">Sign Up</button>
+            </form>
+        </div>
+
+        <div class="form-container log-in">
+            <form asp-page-handler="log" method="post">
+                <div class="loginform">
+                    <h1>Log In</h1>
+                    <span>Login With Your Email & Password</span>
+                    <input type="text" placeholder="Enter Email" name="LEmail">
+                    <input type="password" placeholder="Enter Password" name="Lpass">
+                    <a href="#">Forget Password?</a>
+                    <span class="lerror lead"></span>
+                    <button>Log In</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left toggleinfo2">
+                    <h1>Welcome To <br>Media Horizon</h1>
+                    <p>Log in With Your Email & Passowrd</p>
+                    <button class="hidden" id="login">Log In</button>
+                </div>
+                <div class="toggle-panel toggle-right toggleinfo">
+                    <h1>Welcome To <br>Media Horizon</h1>
+                    <p>Join "Media Horizon" to improve your brand's visibility and reach new heights in the media landscape.</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
